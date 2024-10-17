@@ -1,0 +1,155 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Inventory",
+    "collectionId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+    "dateExported": "2024-10-17T19:00:21.803Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "34a29b1d-2f13-41d2-b64d-9b00f1f1e4a6",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-10-17T17:57:01.204Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "58f91ce7-cea5-45fe-a523-674442b600f5",
+            "name": "Item",
+            "containerId": "",
+            "created": "2024-10-17T18:03:27.150Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "87ef38af-b74c-440b-8414-e861123aa28c",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "34a29b1d-2f13-41d2-b64d-9b00f1f1e4a6",
+            "name": "signup",
+            "url": "http://127.0.0.1:8000/api/auth/signup/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-17T17:57:13.905Z",
+            "modified": "2024-10-17T17:59:05.796Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"full_name\": \"Jane Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"password\": \"strong_password456\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7275cd72-7ddd-4048-b05f-479bfb7ead38",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "58f91ce7-cea5-45fe-a523-674442b600f5",
+            "name": "READ",
+            "url": "http://127.0.0.1:8000/api/items/1",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-10-17T18:07:12.045Z",
+            "modified": "2024-10-17T18:18:35.464Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjkxODgxMTUsImV4cCI6MTcyOTI3NDUxNX0.s9Fu5i8WS0zYlUDTaUFXVccwSWAqaWMhwJSyLdPFVn0"
+                }
+            ]
+        },
+        {
+            "_id": "d9677cb9-ee45-450b-94ac-959ab8341bf7",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "34a29b1d-2f13-41d2-b64d-9b00f1f1e4a6",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-17T18:01:11.661Z",
+            "modified": "2024-10-17T18:01:46.298Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"email\": \"john.doe@example.com\",\r\n    \"password\": \"strong_password456\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bed31324-f27a-4017-8735-9f254180f071",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "58f91ce7-cea5-45fe-a523-674442b600f5",
+            "name": "CREATE",
+            "url": "http://127.0.0.1:8000/api/items/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-17T18:03:39.328Z",
+            "modified": "2024-10-17T18:28:32.073Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjkxODgxMTUsImV4cCI6MTcyOTI3NDUxNX0.s9Fu5i8WS0zYlUDTaUFXVccwSWAqaWMhwJSyLdPFVn0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"Phone\",\r\n  \"description\": \"A smartphone with 64GB storage.\",\r\n  \"quantity\": 10\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2160e6a8-a5b5-4603-ae9f-ff26fddda016",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "58f91ce7-cea5-45fe-a523-674442b600f5",
+            "name": "UPDATE",
+            "url": "http://127.0.0.1:8000/api/items/1/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-10-17T18:05:37.340Z",
+            "modified": "2024-10-17T18:24:25.318Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjkxODgxMTUsImV4cCI6MTcyOTI3NDUxNX0.s9Fu5i8WS0zYlUDTaUFXVccwSWAqaWMhwJSyLdPFVn0"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Phone\",\n    \"description\": \"A smartphone with 128GB storage.\",\n    \"quantity\": 10\n  }",
+                "form": []
+            }
+        },
+        {
+            "_id": "bfd60b36-4e5c-4c24-bbde-4f81aadc20a4",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "58f91ce7-cea5-45fe-a523-674442b600f5",
+            "name": "DELETE",
+            "url": "http://127.0.0.1:8000/api/items/2/",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-10-17T18:07:03.564Z",
+            "modified": "2024-10-17T18:27:27.066Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjkxODgxMTUsImV4cCI6MTcyOTI3NDUxNX0.s9Fu5i8WS0zYlUDTaUFXVccwSWAqaWMhwJSyLdPFVn0"
+                }
+            ]
+        },
+        {
+            "_id": "b48e2c05-f994-46b9-81a6-eea09e9b3885",
+            "colId": "67eccba3-071e-4a55-99ff-2ed36d6c756f",
+            "containerId": "58f91ce7-cea5-45fe-a523-674442b600f5",
+            "name": "LIST",
+            "url": "http://127.0.0.1:8000/api/items",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-10-17T18:07:44.626Z",
+            "modified": "2024-10-17T18:16:09.176Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE3MjkxODgxMTUsImV4cCI6MTcyOTI3NDUxNX0.s9Fu5i8WS0zYlUDTaUFXVccwSWAqaWMhwJSyLdPFVn0"
+                }
+            ]
+        }
+    ],
+    "ref": "nDJr4eYbSVujbh3oLfTll4MU7seTM1l0_GIHSft7GAjuisJp1b4TgoI7ErZQCiNc6Ew8Xf1-3CCYOPJUhvOtXw"
+}
