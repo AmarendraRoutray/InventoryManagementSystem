@@ -25,8 +25,8 @@ This project is a backend API for managing inventory items using Django Rest Fra
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd Inventory-Management-System
+git clone https://github.com/AmarendraRoutray/InventoryManagementSystem
+cd InventoryManagementSystem
 ```
 
 ### 2. Create a Virtual Environment
